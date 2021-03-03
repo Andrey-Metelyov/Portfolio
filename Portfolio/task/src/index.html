@@ -3,46 +3,69 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio page</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
     <nav>
-        <a href="#about">About me</a>
-        <br>
-        <a href="#portfolio">Portfolio</a>
-        <br>
-        <a href="#contacts">Contacts</a>
+        <div class="flex-container">
+            <div class="flex-item"><a href="#about">About me</a></div>
+            <div class="flex-item"><a href="#portfolio">Portfolio</a></div>
+            <div class="flex-item"><a href="#contacts">Contacts</a></div>
+        </div>
     </nav>
+    <h1>Perdun Petrovch Zhopovskiy,<br>
+        Front-end developer
+    </h1>
 </header>
-<h1>Perdun Petrovch Zhopovskiy</h1>
 <section id="about">
-    <h2>About me</h2>
-    <img src="img/person.jpg"
-         alt="it's me"/>
-    <p>Hi this is text</p>
+    <div class="about-container">
+        <div class="about-left">
+            <div class="about-left-background">
+                <img src="img/image.jpg" alt="background"/>
+            </div>
+            <div class="about-left-foreground">
+                <img src="img/person.jpg" alt="it's me"/>
+            </div>
+        </div>
+        <div class="about-right">
+            <div class="about-text">
+                <h2>About me</h2>
+                <p>Hi this is text. Some long text about my skills. I have a lot of skills! Very very many good
+                    skills</p>
+            </div>
+        </div>
+    </div>
 </section>
 <section id="portfolio">
     <h2>Portfolio</h2>
-    <figure>
-        <img src="img/project1.png" alt="Project 1"/>
-        <figcaption>This is my first project</figcaption>
-    </figure>
-    <figure>
-        <img src="img/project2.png" alt="Project 2"/>
-        <figcaption>This is my second project</figcaption>
-    </figure>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <figure>
+                <img src="img/project1.png" alt="Project 1"/>
+                <figcaption>This is my first project</figcaption>
+            </figure>
+        </div>
+        <div class="portfolio-item">
+            <figure>
+                <img src="img/project2.png" alt="Project 2"/>
+                <figcaption>This is my second project</figcaption>
+            </figure>
+        </div>
+    </div>
 </section>
 <section id="contacts">
     <h2>Contacts</h2>
     <a href="tel:+79876543">Call me</a>
     <br>
-    <a href="https://github.com/perdun"><img src="img/github.svg" height="50" alt="Github icon"/></a>
-    <a href="https://facebook.com/perdun"><img src="img/facebook.svg" height="50" alt="Facebook icon"/></a>
-    <a href="https://twitter.com/perdun"><img src="img/twitter.svg" height="50" alt="Twitter icon"/></a>
-    <a href="https://instagram.com/perdun"><img src="img/instagram.svg" height="50" alt="Instagram icon"/></a>
+    <a href="https://github.com/perdun"><img src="img/github.svg" alt="Github icon"/></a>
+    <a href="https://facebook.com/perdun"><img src="img/facebook.svg" alt="Facebook icon"/></a>
+    <a href="https://twitter.com/perdun"><img src="img/twitter.svg" alt="Twitter icon"/></a>
+    <a href="https://instagram.com/perdun"><img src="img/instagram%201.svg" alt="Instagram icon"/></a>
 </section>
 <footer>
-    Perdun Petrovch Zhopovskiy, 2021
+    <div>Perdun Petrovch Zhopovskiy</div>
+    <div>2021</div>
 </footer>
 </body>
 </html>
