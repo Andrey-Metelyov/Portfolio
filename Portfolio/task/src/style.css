@@ -123,3 +123,14 @@ footer {
     background-color: darkslategray;
     text-align: center;
 }
+
+.window {
+    display: none;
+    position: fixed;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    border: medium solid black;
+    border-radius: 15px;
+    background-color: aliceblue;
+}

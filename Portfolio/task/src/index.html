@@ -45,12 +45,24 @@
                 <img src="img/project1.png" alt="Project 1"/>
                 <figcaption>This is my first project</figcaption>
             </figure>
+            <button class="open-window" onclick="showWindow('project1')">Take a look</button>
+            <div class="window" id="project1">
+                <h1>Flashcards</h1>
+                <p>You can see the project at the following link: <a href="flashcards.com">flashcards</a></p>
+                <button onclick="hideWindow('project1')">Close</button>
+            </div>
         </div>
         <div class="portfolio-item">
             <figure>
                 <img src="img/project2.png" alt="Project 2"/>
                 <figcaption>This is my second project</figcaption>
             </figure>
+            <button class="open-window"onclick="showWindow('project2')">Take a look</button>
+            <div class="window" id="project2">
+                <h1>Piano</h1>
+                <p>You can see the project at the following link: <a href="piano.com">piano</a></p>
+                <button onclick="hideWindow('project2')">Close</button>
+            </div>
         </div>
     </div>
 </section>
@@ -67,5 +79,13 @@
     <div>Perdun Petrovch Zhopovskiy</div>
     <div>2021</div>
 </footer>
+<script>
+    function showWindow(id) {
+        document.getElementById(id).style.display = "block";
+    }
+    function hideWindow(id) {
+        document.getElementById(id).style.display = "none";
+    }
+</script>
 </body>
 </html>
