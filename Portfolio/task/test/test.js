@@ -125,7 +125,6 @@ async function stageTest() {
         },
 
         // Test #9 - check header and footer background colors
-        // Test #9 - check header and footer background colors
         () => {
             function getRealColor(elem) {
                 try {
@@ -199,6 +198,16 @@ async function stageTest() {
                 return hs.wrong('Cannot find the element with the class "window".');
             }
 
+            return hs.correct()
+        },
+
+        // Test #11 -  check that the page has a hamburger menu
+        () => {
+            let buttons = document.getElementsByClassName('hamburger');
+
+            if (buttons === null || buttons.length === 0) {
+                return hs.wrong('Not find the hamburger menu on your page. Create it and set the "hamburger" class to the tag that wraps the menu elements.');
+            }
             return hs.correct()
         }
     );
